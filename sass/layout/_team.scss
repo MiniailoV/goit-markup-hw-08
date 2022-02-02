@@ -1,11 +1,28 @@
-.section-team--bcg {
+.section--color {
   background-color: var(--bcg-ourteam-color);
 }
 
-.card-set__stuff {
+.team-set {
+  display: flex;
+  justify-content: center;
+  @extend %list;
+}
+
+.team-set__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-set__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-set__stuff {
   font-size: var(--font-middle);
 }
-.card-set__post-team {
+
+.team-set__post {
   font-size: var(--font-middle);
   line-height: 1.18;
   color: var(--grey-color);
@@ -13,16 +30,20 @@
   margin-bottom: 16px;
 }
 
-.card-set__item--team {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.card-set__box {
+.team-set__box {
   background-color: var(--white-color);
   text-align: center;
   padding: 30px 0;
   border: transparent;
   border-radius: 0px 0px 4px 4px;
 }
+
+// .social-set {
+//   display: flex;
+//   justify-content: center;
+//   @extend %list;
+// }
+
+// .social-set:not(:last-child) {
+//   margin-right: 10px;
+// }
