@@ -1,0 +1,134 @@
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  & + & {
+  margin-top: 10px;
+ }
+}
+
+.form-label {
+  text-align: left;
+  font-size: var(--font-mini);
+  color: var(--grey-color);
+  margin-bottom: 4px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 0 12px 42px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms var(--animation-cubic);
+  &:focus {
+  border-color: var(--accent-color);
+  cursor: pointer;}
+}
+
+textarea {
+  resize: none;
+}
+
+.form-field {
+    .comment {
+  padding: 12px 16px;
+  font-size: var(--font-mini);
+  color: rgba(117, 117, 117, 0.5);
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  border-color: rgba(117, 117, 117, 0.5);
+  border-radius: 4px;
+  &:focus {
+      border-color: var(--accent-color);
+  cursor: pointer;
+  }
+ }
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+
+.form-field.policy-box {
+  margin-bottom: 30px;
+}
+
+.link-policy {
+  color: var(--accent-color);
+  margin-left: 5px;
+}
+
+.policy {
+  color: var(--grey-color);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+      span {
+      width: 16px;
+      height: 15px;
+      border: 2px solid var(--black-font-color);
+      border-radius: 2px;
+      margin-right: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+.policy-check:checked + .policy span {
+  border: none;
+  background-color: var(--accent-color);
+  transition: background-color 250ms var(--animation-cubic);
+}
+
+.policy-check:checked + .policy .policy-icon {
+  fill: var(--white-color);
+  transition: fill 250ms var(--animation-cubic);
+}
+
+.policy-icon {
+  fill: transparent;
+}
+
+.input-box {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms var(--animation-cubic);
+}
+
+.form-icon-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-25%, 25%);
+  border: violet;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  transition: fill 250ms var(--animation-cubic);
+  &:hover {
+    fill: var(--accent-color);
+  }
+}

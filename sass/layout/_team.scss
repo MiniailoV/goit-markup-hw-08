@@ -1,0 +1,28 @@
+.section-team--bcg {
+  background-color: var(--bcg-ourteam-color);
+}
+
+.card-set__stuff {
+  font-size: var(--font-middle);
+}
+.card-set__post-team {
+  font-size: var(--font-middle);
+  line-height: 1.18;
+  color: var(--grey-color);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.card-set__item--team {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-set__box {
+  background-color: var(--white-color);
+  text-align: center;
+  padding: 30px 0;
+  border: transparent;
+  border-radius: 0px 0px 4px 4px;
+}

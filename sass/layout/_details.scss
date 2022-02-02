@@ -1,0 +1,33 @@
+.section--padding {
+  padding-bottom: 0px;
+}
+.card-set__title {
+  font-size: var(--font-main);
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.card-set__post {
+  line-height: 1.71;
+  color: var(--grey-color);
+  text-align: left;
+  max-width: 270px;
+}
+
+.card-set__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--bcg-ourteam-color);
+  margin-bottom: 30px;
+}
+
+.card-set__icon {
+  fill: currentColor;
+}
+
+.card-set__icon--fill {
+  fill: var(--white-color);
+}

@@ -1,0 +1,12 @@
+.card-set__link--clients {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 5px;
+  &:hover, &:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  color: var(--accent-color);
+  background-color: transparent;
+}
+}

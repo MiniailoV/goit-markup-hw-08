@@ -1,0 +1,13 @@
+.section {
+  padding: 94px 0;
+}
+
+// .list {
+//   list-style: none;
+// }
+
+.link {
+  text-decoration: none;
+  display: block;
+  transition: color 250ms var(--animation-cubic);
+}

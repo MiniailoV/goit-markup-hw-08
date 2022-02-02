@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="./styles/styles.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="page">
+    <!--Шапочка-->
+<header class="page-header">
+    <div class="container header-container">
+        <a class="link logo page-header__logo" href="index.html"><span class="logo__accent">Web</span>Studio</a>
+        <nav class="page-header__nav">
+            <ul class="site-nav">
+                <li class="site-nav__item"><a class="link site-nav__link"
+                        href="./index.html">Студия</a></li>
+                <li class="site-nav__item"><a class="link site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                <li class="site-nav__item"><a class="link site-nav__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-contacts">
+            <ul class="contacts-nav">
+                <li class="contacts-nav__item"><a class="link contacts-nav__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-nav__icon" width=16 height=12>
+                            <use href="./images/icons.svg#mail"></use>
+                        </svg>info@devstudio.com</a></li>
+                <li class="contacts-nav__item"><a class="link contacts-nav__link" href="tel:+380961111111">
+                        <svg class="contacts-nav__icon" width=10 height=16>
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <!--Секция Мейн-->
+    <main>
+        <!--Фильтр и  список проектов-->
+        <section class="section">
+            <div class="container portfolio-container">
+                <h1 class="visually-hidden">Проекты</h1>
+                <!--Скрыто через CSS-->
+                <ul class="section-pfo-list-btn">
+                    <li class="btn-item"><button class="btn btn-all" type="button">Всё</button></li>
+                    <li class="btn-item"><button class="btn btn-web" type="button">Веб-сайты</button></li>
+                    <li class="btn-item"><button class="btn btn-app" type="button">Приложения</button></li>
+                    <li class="btn-item"><button class="btn btn-design" type="button">Дизайн</button></li>
+                    <li class="btn-item"><button class="btn btn-market" type="button">Маркетинг</button></li>
+                </ul>
+                <!--Список Проектов и товаров-->
+                <ul class="section-pfo-list">
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                        <div class="pfo-box-image">
+                                 <img src="./images/tech.jpg" alt="ноутбук" width="370" height="294">
+                            <div class="pfo-box-overlay">
+                                <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                        </div>
+                         <div class="box-section-pfo-title">
+                            <h2 class="section-pfo-title">Технокряк</h2>
+                            <p class="section-pfo-post">Веб-сайт</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/new-orlean.jpg" alt="баскетбол" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="section-pfo-post">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/fish.jpg" alt="Лого-ресторана-рыбка" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Ресторан Seafood</h2>
+                                <p class="section-pfo-post">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/headphones.jpg" alt="наушники" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Проект Prime</h2>
+                                <p class="section-pfo-post">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                <li class="pfo-item">
+                    <a class="link section-pfo-link" href="">
+                        <div class="pfo-box-image">
+                            <img src="./images/boxes.jpg" alt="наушники" width="370" height="294">
+                            <div class="pfo-box-overlay">
+                                <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                    Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box-section-pfo-title">
+                            <h2 class="section-pfo-title">Проект Boxes</h2>
+                            <p class="section-pfo-post">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/mac.jpg" alt="наушники" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Inspiration has no Borders</h2>
+                                <p class="section-pfo-post">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/book.jpg" alt="наушники" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Издание Limited Edition</h2>
+                                <p class="section-pfo-post">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/lable1.jpg" alt="наушники" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Проект LAB</h2>
+                                <p class="section-pfo-post">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pfo-item">
+                        <a class="link section-pfo-link" href="">
+                            <div class="pfo-box-image">
+                                <img src="./images/notebook2.jpg" alt="наушники" width="370" height="294">
+                                <div class="pfo-box-overlay">
+                                    <p class="pfo-post-overlay">Технокряк это современная площадка распространения коронавируса.
+                                        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-section-pfo-title">
+                                <h2 class="section-pfo-title">Growing Business</h2>
+                                <p class="section-pfo-post">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="wrapper">
+                    <a class="link logo footer__logo" href="#"><span class="logo__accent">Web</span><span
+                            class="logo__studio">Studio</span></a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item"><a class="link address__link address__link--map"
+                                    href="https://goo.gl/maps/qvFhKNeTqDzLGV248" target="_blank"
+                                    rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address__item"><a class="link address__link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="address__item"><a class="link address__link" href="tel:+380961111111">+38 096 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-join">
+                    <p class="footer__title">Присоединяйтесь</p>
+                    <ul class="card-set">
+                        <li class="card-set__item card-set__item--position">
+                            <a class="card-set__link card-set__link--footer" href="#" aria-label="instagram">
+                                <svg class="card-set__icon card-set__icon--fill" width="20" height="20">
+                                    <use href="./images/icons.svg#instagram_w">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="card-set__item card-set__item--position">
+                            <a class="card-set__link card-set__link--footer" href="#" aria-label="twitter">
+                                <svg class="card-set__icon card-set__icon--fill" width="20" height="20">
+                                    <use href="./images/icons.svg#twitter_w">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="card-set__item card-set__item--position"><a class="card-set__link card-set__link--footer"
+                                href="#" aria-label="facebook">
+                                <svg class="card-set__icon card-set__icon--fill" width="20" height="20">
+                                    <use href="./images/icons.svg#facebook-w">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="card-set__item card-set__item--position">
+                            <a class="card-set__link card-set__link--footer" href="#" aria-label="linkedin">
+                                <svg class="card-set__icon card-set__icon--fill" width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin-w">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-submit">
+                    <p class="footer__title">Подпишитесь на рассылку</p>
+                    <div class="form-field-footer">
+                        <input type="email" class="form-input-footer" name="user-name" id="email" autocomplete="on"
+                            placeholder="E-mail">
+                        <button type="submit" class="btn btn-footer">Подписаться <svg class="footer-icon" width="24"
+                                height="24">
+                                <use href="./images/icons.svg#send">
+                                </use>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
