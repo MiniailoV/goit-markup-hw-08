@@ -943,10 +943,14 @@ textarea {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .section-pfo-link {
   transition: box-shadow 250ms var(--animation-cubic);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .section-pfo-link:hover {
@@ -961,7 +965,6 @@ textarea {
 .pfo-box-image {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
