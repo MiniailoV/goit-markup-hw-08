@@ -9,6 +9,24 @@
 .clients__item {
   margin-bottom: 30px;
   margin-left: 30px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
+  }
 }
 
 .clients__link {
@@ -30,5 +48,16 @@
     border-radius: 5px;
     color: var(--accent-color);
     background-color: transparent;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
