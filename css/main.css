@@ -388,13 +388,19 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* min-height: 581px; */
-  min-width: 528px;
-  padding: 40px 39px 40px 41px;
+  width: 450px;
+  padding: 40px 40px 40px 40px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%) scale(1);
+  border-radius: 4px;
   opacity: 1;
   transition: transform 250ms var(--animation-cubic), opacity 250ms var(--animation-cubic);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-title {
@@ -477,9 +483,16 @@ textarea {
 .policy {
   color: var(--grey-color);
   line-height: 1.7;
+  font-size: var(--font-mini);
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+  }
 }
 
 .policy span {
