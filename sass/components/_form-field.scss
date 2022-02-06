@@ -48,7 +48,12 @@ textarea {
 .form-field {
   .comment {
     padding: 12px 16px;
-    font-size: var(--font-mini);
+    font-size: var(--font-main);
+
+    @media screen and (min-width: 1200px) {
+      font-size: var(--font-mini);
+    }
+
     color: rgba(117, 117, 117, 0.5);
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -83,7 +88,7 @@ textarea {
   align-items: center;
 
   @media screen and (min-width: 1200px) {
-    font-size: 14px;
+    font-size: var(--font-main);
   }
   span {
     width: 16px;
