@@ -40,7 +40,11 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
+        <button type="button" class="menu-open-btn">O</button>
     </div>
+        <div class="mob-menu">
+            <button type="button" class="close-menu-btn"></button>
+        </div>
 </header>
     <main>
         <!--Блок Героев-->
@@ -107,16 +111,24 @@
                 <ul class="card-set">
                     <li class="card-set__item">
                         <div class="card-set__block"><a class="link" href="#">
-                                <img src="./images/keyboard.jpg" alt="клавитура" width="370" height="294">
-                                <div class="card-set__overlay">
-                                    <p class="overlay__post">Десктопные приложения</p>
+                                <picture>
+                                    <source srcset="./images/keyboard.jpg 1x,
+                                    ./images/a1_2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./images/keyboard.jpg" alt="Десктоп" />
+                                </picture>
+                            <div class="card-set__overlay">
+                                <p class="overlay__post">Десктопные приложения</p>
                             </a>
                         </div>
             </div>
             </li>
             <li class="card-set__item">
                 <div class="card-set__block"><a class="link" href="#">
-                        <img src="./images/notebook.jpg" alt="ноутбук" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/notebook.jpg 1x,
+                                ./images/a2_2x.jpg 2x" media="(min-width: 1200px)">
+                                <img src="./images/notebook.jpg" alt="Мобильные приложения" />
+                            </picture>
                         <div class="card-set__overlay">
                             <p class="overlay__post">Мобильные приложения</p>
                     </a>
@@ -125,7 +137,11 @@
             </li>
             <li class="card-set__item">
                 <div class="card-set__block"><a class="link" href="#">
-                        <img src="./images/tablet.jpg" alt="планшет" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/tablet.jpg 1x,
+                                ./images/a3_2x.jpg 2x" media="(min-width: 1200px)">
+                                <img src="./images/tablet.jpg" alt="Планшет" />
+                            </picture>
                         <div class="card-set__overlay">
                             <p class="overlay__post">Дизайнерские решения</p>
                     </a>
@@ -140,9 +156,15 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team-set">
                         <li class="team-set__item">
-                            <img srcset="./images/ihor.jpg 1x,
-                            ./images/team-1_d_2x.jpg 2x"
-                            src="./images/ihor.jpg" alt="фото-сотрудника-Игоря" width="270" height="260" />
+                            <picture>
+                                <source srcset="./images/ihor.jpg 1x,
+                                                            ./images/team-1_d_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/team-1_t_1x.jpg 1x,
+                                                            ./images/team-1_t_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/team-1_m_1x.jpg 1x,
+                                                            ./images/team-1_m_2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/ihor.jpg" alt="фото-сотрудника-Ольги" />
+                            </picture>
                             <div class="team-set__box">
                                 <h3 class="team-set__stuff">Игорь Демьяненко</h3>
                                 <p class="team-set__post">Product Designer</p>
@@ -175,10 +197,15 @@
                             </div>
                         </li>
                         <li class="team-set__item">
-                            <img srcset="./images/olga.jpg 1x, 
-                            ./images/team-2_d_2x.jpg 2x"
-                            src="./images/olga.jpg" 
-                            alt="фото-сотрудника-Ольги" width="270" height="260" />
+                            <picture>
+                                <source srcset="./images/olga.jpg 1x,
+                                                            ./images/team-2_d_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/team-2_t_1x.jpg 1x,
+                                                            ./images/team-2_t_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/team-2_m_1x.jpg 1x,
+                                                            ./images/team-2_m_2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/olga.jpg" alt="фото-сотрудника-Ольги" />
+                            </picture>
                             <div class="team-set__box">
                                 <h3 class="team-set__stuff">Ольга Репина</h3>
                                 <p class="team-set__post">Frontend Developer</p>
@@ -219,11 +246,12 @@
                                 <source
                                 srcset="./images/team-3_m_1x.jpg 1x,
                                 ./images/team-3_m_2x.jpg 2x"
-                                media="(min-width: 768px)">
+                                media="(min-width: 480px)">
+                                <img 
+                                src="./images/nikola.jpg" 
+                                alt="фото-сотрудника-Николая"/>
                             </picture>
-                            <!-- <img srcset="./images/nikola.jpg 1x,
-                            ./images/team-3_d_2x.jpg 2x"
-                            src="./images/nikola.jpg" alt="фото-сотрудника-Николая" width="270" height="260" /> -->
+                            
                             <div class="team-set__box">
                                 <h3 class="team-set__stuff">Николай Тарасов</h3>
                                 <p class="team-set__post">Marketing</p>
@@ -252,9 +280,15 @@
                             </div>
                         </li>
                         <li class="team-set__item">
-                            <img srcset="./images/miko.jpg 1x,
-                            ./images/team-4_d_2x.jpg 1x"
-                            src="./images/miko.jpg" alt="фото-сотрудника-Михаила" width="270" height="260" />
+                            <picture>
+                                <source srcset="./images/miko.jpg 1x,
+                                                            ./images/team-4_d_2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/team-4_t_1x.jpg 1x,
+                                                            ./images/team-4_t_2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/team-4_m_1x.jpg 1x,
+                                                            ./images/team-4_m_2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/miko.jpg" alt="фото-сотрудника-Ольги" />
+                            </picture>
                             <div class="team-set__box">
                                 <h3 class="team-set__stuff">Михаил Ермаков</h3>
                                 <p class="team-set__post">UI Designer</p>
@@ -447,6 +481,10 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

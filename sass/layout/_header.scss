@@ -10,8 +10,9 @@
   @extend %list;
 }
 
-.site-nav {
-  display: none;
+.site-nav,
+.contacts-nav {
+  display: none; /*+*/
 }
 
 .header-contacts {
@@ -79,4 +80,9 @@
 .contacts-nav__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.close__icon {
+  background-color: #fff;
+  fill: #000;
+  color: red;
 }
