@@ -10,6 +10,10 @@
   @extend %list;
 }
 
+.site-nav {
+  display: none;
+}
+
 .header-contacts {
   margin-left: auto;
 }
