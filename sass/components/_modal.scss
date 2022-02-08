@@ -23,7 +23,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  // width: 90%;
+  width: calc(100vw - 30px);
+  // width: 450px;
   // min-width: 528px;
   padding: 40px 40px 40px 40px;
   background-color: var(--white-color);
@@ -31,6 +33,14 @@
   border-radius: 4px;
   opacity: 1;
   transition: transform 250ms var(--animation-cubic), opacity 250ms var(--animation-cubic);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
