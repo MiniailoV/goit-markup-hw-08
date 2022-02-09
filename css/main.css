@@ -1164,6 +1164,10 @@ textarea {
   }
 }
 
+.mob-menu-bottom {
+  margin-top: auto;
+}
+
 .footer {
   background-color: var(--bcg-footer-heroes-color);
   padding: 60px 0;
