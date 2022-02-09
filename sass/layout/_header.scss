@@ -1,5 +1,6 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  // height: 60px;
 }
 
 .header-container,
@@ -9,6 +10,12 @@
   align-items: center;
   @extend %list;
 }
+
+.header-container {
+  height: 60px;
+  @media screen and  (min-width: 767px) {
+    height: 100%;
+}}
 
 .site-nav__item {
   &:not(:last-child) {
@@ -51,7 +58,7 @@
   }
 }
 
-.contacts-nav__item{
+.contacts-nav__item {
   @media screen and (max-width: 1199px) {
     margin-right: 0;
   }
@@ -149,7 +156,6 @@
   width: 100%;
 }
 
-
 .mob-menu {
   position: fixed;
   background-color: var(--white-color);
@@ -171,26 +177,6 @@
   justify-content: space-between;
   }
 }
-
-.menu-close-btn {
-  top: 10px;
-  right: 15px;
-  position: absolute;
-  margin-left: auto;
-  display: block;
-}
-
-.menu-open-btn {
-  position: absolute;
-  top: 10px;
-  right: 22px;
-  margin-left: auto;
-  display: block;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-  
 
 .site-list__item:not(:last-child) {
   margin-bottom: 32px;
@@ -261,4 +247,61 @@ display: inline-block;
 
   .mob-menu.is-hidden {
     left: 100%;
+  }
+
+  .menu-close-btn {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    margin-left: auto;
+    width: 17px;
+    height: 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    
+  }
+  
+  .menu-open-btn {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    margin-left: auto;
+    // width: 17px;
+    // height: 18px;
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .open-icon {
+    fill: solid black;
+    //  z-index: 3; 
+     position: fixed; 
+     top: 22px; 
+     right: 20px; 
+     margin: 0;
+     width: 24px;
+    height: 16px;
+     &:hover {
+       fill: var(--accent-color);
+     }
+  }
+
+  .close-icon {
+    fill: solid black;
+    position: fixed; 
+    top: 22px; 
+    right: 20px; 
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    &:hover {
+      fill: var(--accent-color);
+    }
   }
