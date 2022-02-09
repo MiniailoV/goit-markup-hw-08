@@ -78,7 +78,13 @@ body {
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__accent {
@@ -257,7 +263,6 @@ body {
 
 .page-header {
   border-bottom: 1px solid #ececec;
-  position: absolute;
 }
 
 .header-container,
@@ -267,6 +272,22 @@ body {
   align-items: center;
 }
 
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .header-container {
   background-color: white;
 }
@@ -274,7 +295,6 @@ body {
 .site-nav,
 .contacts-nav {
   display: none;
-  /*+*/
 }
 
 @media screen and (min-width: 768px) {
@@ -284,13 +304,27 @@ body {
   }
 }
 
-.header-contacts {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    display: flex;
+  }
 }
 
-.site-nav__item:not(:last-child),
-.contacts-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-nav {
+    flex-direction: column;
+    align-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts-nav__item {
+    margin-right: 0;
+  }
+}
+
+.header-contacts {
+  margin-left: auto;
 }
 
 .site-nav__link {
@@ -350,13 +384,28 @@ body {
   margin-right: 10px;
 }
 
-.contacts-nav__icon-mail {
-  fill: currentColor;
-  margin-right: 10px;
+.contacts-nav__icon--mail {
+  width: 14px;
+  height: 10px;
 }
 
-.contacts-nav__icon-tel {
-  fill: currentColor;
+@media screen and (min-width: 1200px) {
+  .contacts-nav__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts-nav__icon--tel {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .mob-social,
@@ -375,7 +424,7 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  transition: left 500ms, visibility 500ms;
+  transition: left 500ms, visibility 500ms, right 500ms, visibility 500ms;
 }
 
 .mob-menu .container {
@@ -399,6 +448,12 @@ body {
   right: 22px;
   margin-left: auto;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .site-list__item:not(:last-child) {

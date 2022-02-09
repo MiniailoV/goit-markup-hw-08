@@ -1,6 +1,5 @@
 .page-header {
   border-bottom: 1px solid #ececec;
-  position: absolute;
 }
 
 .header-container,
@@ -10,23 +9,51 @@
   align-items: center;
   @extend %list;
 }
+
+.site-nav__item {
+  &:not(:last-child) {
+        margin-right: 50px;
+      }
+}
+.contacts-nav__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+ }
+}
+
 .header-container {
   background-color: white;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-
-  @media screen and (min-width: 768px) {
-    // padding-top: 26px;
-    // padding-bottom: 26px;
-  }
-  
 }
+
 .site-nav,
 .contacts-nav {
-  display: none; /*+*/
+  display: none; 
 
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+}
+
+.contacts-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    
+    @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-content: flex-start;
+    }
+  }
+}
+
+.contacts-nav__item{
+  @media screen and (max-width: 1199px) {
+    margin-right: 0;
   }
 }
 
@@ -34,12 +61,6 @@
   margin-left: auto;
 }
 
-.site-nav__item,
-.contacts-nav__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
 
 .site-nav__link {
   position: relative;
@@ -98,18 +119,23 @@
   margin-right: 10px;
 }
 
-.contacts-nav__icon-mail {
-  fill: currentColor;
-  margin-right: 10px;
-  @media screen {
-    
+.contacts-nav__icon--mail {
+  width: 14px;
+  height: 10px;
+  
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+  height: 12px;
   }
 }
 
-.contacts-nav__icon-tel {
-  fill: currentColor;
-  @media screen {
-    
+.contacts-nav__icon--tel {
+  width: 10px;
+  height: 14px;
+  
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -124,7 +150,6 @@
 }
 
 
-
 .mob-menu {
   position: fixed;
   background-color: var(--white-color);
@@ -137,7 +162,7 @@
   padding-bottom: 48px;
   padding-left: 40px;
   // transform: translate(0);
-  transition: left 500ms, visibility 500ms;
+  transition: left 500ms, visibility 500ms, right 500ms, visibility 500ms;
   
   .container {
     height: 100%;
@@ -161,6 +186,9 @@
   right: 22px;
   margin-left: auto;
   display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
   
 
@@ -230,7 +258,6 @@ display: inline-block;
     transform: rotate(90deg);
     margin-left: 10px;
   }
-
 
   .mob-menu.is-hidden {
     left: 100%;
