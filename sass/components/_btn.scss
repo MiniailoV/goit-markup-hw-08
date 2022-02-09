@@ -37,8 +37,14 @@
 .section-pfo-list-btn {
   @extend %list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+    // justify-content: center;
+    justify-content: flex-start;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .btn-item {
@@ -47,7 +53,9 @@
   }
   &:not(:last-child) {
     margin-right: 8px;
-  }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+  }}
 }
 
 .btn-submit,
